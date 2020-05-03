@@ -1,0 +1,8 @@
+django-split-settings
+django-extensions
+Django~=3.0
+psycopg2
+bpython
+celery~=4.4
+django-webpack-loader
+django-redis

@@ -1,0 +1,27 @@
+{% load static %}
+{% load render_bundle from webpack_loader %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Sandbox{% endblock %}</title>
+
+    {% render_bundle 'main' 'css' %}
+
+    {% block extra_css %}
+    {% endblock %}
+
+</head>
+<body>
+
+{% block body %}
+{% endblock %}
+
+</body>
+<!-- custom js -->
+{% render_bundle 'main' 'js' %}
+
+{% block extra_js %}{% endblock %}
+</html>
